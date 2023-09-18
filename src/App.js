@@ -11,7 +11,7 @@ class App extends React.Component {
   
   addItem(e) {
     
-    var itemArray = this.state.items;
+    const itemArray = this.state.items;
     
     itemArray.push(
       {
@@ -50,13 +50,13 @@ class App extends React.Component {
 class ToDoItems extends React.Component {
   render() { 
   
-    var todoEntries = this.props.entries;
+    const todoEntries = this.props.entries;
     
     function createTasks(item){
       return <li key={item.key}>{item.text}</li>
     }
     
-    var listItems = todoEntries.map(createTasks);
+    const listItems = todoEntries.map(createTasks);
     
     return (
       <div>
